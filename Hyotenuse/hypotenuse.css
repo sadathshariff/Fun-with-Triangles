@@ -27,18 +27,22 @@ body {
 .nav-links:hover {
   border-bottom: 3px solid blue;
 }
+.active-link {
+  border-bottom: 3px solid var(--primary-color);
+}
 
 .container {
   max-width: 600px;
   margin: auto;
-  border: 2px solid black;
-  padding: 1.5rem;
-  margin-top: 0.8rem;
-  border-radius: 0.5rem;
 }
 .hero-heading {
   text-align: center;
   font-size: 2rem;
+}
+.formula {
+  text-align: center;
+  border: 2px solid var(--secondary-color);
+  padding: 0.7rem;
 }
 .side-input,
 label {
@@ -46,7 +50,7 @@ label {
   justify-content: center;
   margin: auto;
   padding: 0.5rem;
-  width: 50%;
+  width: 100%;
   font-size: 1.4rem;
   text-align: center;
 }
