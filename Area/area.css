@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap");
+
+:root {
+  --primary-color: #f3f4f6;
+  --secondary-color: #6b7280;
+}
+
+body {
+  background-color: var(--primary-color);
+  font-family: "Nunito", sans-serif;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1.2rem;
+  background-color: var(--secondary-color);
+}
+
+.nav-links {
+  color: var(--primary-color);
+  margin: 0.3rem 1rem;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+.nav-links:hover {
+  border-bottom: 3px solid blue;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  border: 2px solid black;
+  padding: 1.5rem;
+  margin-top: 0.8rem;
+  border-radius: 0.5rem;
+}
+.hero-heading {
+  text-align: center;
+  font-size: 2rem;
+}
+.inputs,
+label {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 0.5rem;
+  width: 50%;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.btn-div {
+  text-align: center;
+  margin-top: 1.3rem;
+}
+#submit-area {
+  display: block;
+  margin: 1.3rem auto 0;
+  padding: 1rem;
+  width: 50%;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 10px;
+}
+#submit-area:hover {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+#output-div {
+  text-align: center;
+  margin-top: 1.3rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+}

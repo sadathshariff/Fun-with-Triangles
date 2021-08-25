@@ -7,19 +7,23 @@
     <link rel="stylesheet" href="area.css" />
   </head>
   <body>
-    <nav>
-      <a href="index.html">isTriangles</a>
-      <a href="quiz.html"> Quiz</a>
-      <a href="hypotenuse.html">Hypotenuse</a>
-      <a href="area.html"> Area</a>
+    <nav class="nav-bar">
+      <a class="nav-links" href="../IsTriangle/index.html">isTriangles</a>
+      <a class="nav-links" href="../Quiz/quiz.html"> Quiz</a>
+      <a class="nav-links" href="../Hyotenuse/hypotenuse.html">Hypotenuse</a>
+      <a class="nav-links" href="../Area/area.html"> Area</a>
     </nav>
-    <h1>Calculate Area</h1>
-    <label for="base">Base (in cm):</label>
-    <input type="number" id="base" class="base-side inputs" />
-    <label for="height">Height (in cm):</label>
-    <input type="number" id="height" class="height-side inputs" />
-    <button type="submit" id="submit-area">Check Area</button>
-    <div id="output-div"></div>
+    <h1 class="hero-heading">Calculate Area</h1>
+    <div class="container">
+      <label for="base">Base (in cm):</label>
+      <input type="number" id="base" class="base-side inputs" />
+      <label for="height">Height (in cm):</label>
+      <input type="number" id="height" class="height-side inputs" />
+      <div class="btn-div">
+        <button type="submit" id="submit-area">Check Area</button>
+      </div>
+      <div id="output-div"></div>
+    </div>
     <script src="area.js"></script>
   </body>
 </html>
