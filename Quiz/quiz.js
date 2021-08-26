@@ -13,6 +13,7 @@ function calculateScore() {
     if (value === correctAnswers[index]) {
       score = score + 1;
     }
+
     index = index + 1;
   }
   console.log(score);
