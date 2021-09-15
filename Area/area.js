@@ -7,10 +7,10 @@ const outputDiv = document.querySelector("#output-div");
 let flag = 0;
 
 function validate(base, height) {
-  if (base == "") {
+  if (base == "" || base < 1) {
     outputDiv.innerText = "Please Fill all the Fields";
     flag = 1;
-  } else if (height == "") {
+  } else if (height == "" || height < 1) {
     outputDiv.innerText = "Please Fill all the Fields";
     flag = 1;
   } else {

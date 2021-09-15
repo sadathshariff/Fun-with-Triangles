@@ -14,10 +14,10 @@ function showMsg(msg) {
 }
 
 function validate(a, b) {
-  if (a == "") {
+  if (a == "" || a < 1) {
     showMsg("Enter both fields to calulate");
     flag = 1;
-  } else if (b == "") {
+  } else if (b == "" || b < 1) {
     showMsg("Enter both fields to calulate");
     flag = 1;
   } else {

@@ -7,14 +7,14 @@ function showMessage(msg) {
   outputDiv.innerText = msg;
 }
 function validate(angle1, angle2, angle3) {
-  if (angle1 == 0) {
+  if (angle1 == 0 || angle1 < 0) {
     console.log(angle1);
     showMessage("Please Fill All the Fields");
     flag = 1;
-  } else if (angle2 == 0) {
+  } else if (angle2 == 0 || angle2 < 0) {
     showMessage("please fill all the fields");
     flag = 1;
-  } else if (angle3 == 0) {
+  } else if (angle3 == 0 || angle3 < 0) {
     showMessage("please Fill all the fields");
     flag = 1;
   } else {
