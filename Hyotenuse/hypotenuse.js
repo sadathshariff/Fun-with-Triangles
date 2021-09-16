@@ -14,14 +14,15 @@ function showMsg(msg) {
 }
 
 function validate(a, b) {
-  if (a == "" || a < 1) {
-    showMsg("Enter both fields to calulate");
-    flag = 1;
-  } else if (b == "" || b < 1) {
+  if (a == "" || b == "" || a < 1 || b < 1) {
     showMsg("Enter both fields to calulate");
     flag = 1;
   } else {
     flag = 0;
+  }
+  if (Math.sign(a) === -1 || Math.sign(b) === -1) {
+    showMsg("Negative Inputs!!");
+    flag = 1;
   }
 }
 
