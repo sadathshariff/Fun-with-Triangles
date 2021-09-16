@@ -7,14 +7,19 @@ const outputDiv = document.querySelector("#output-div");
 let flag = 0;
 
 function validate(base, height) {
-  if (base == "" || base < 1) {
-    outputDiv.innerText = "Please Fill all the Fields";
-    flag = 1;
-  } else if (height == "" || height < 1) {
+  if (base == "" || height == "") {
     outputDiv.innerText = "Please Fill all the Fields";
     flag = 1;
   } else {
     flag = 0;
+  }
+  if (Math.sign(base) === -1 || Math.sign(height) === -1) {
+    outputDiv.innerText = "Negative Input Fields ";
+    flag = 1;
+  }
+  if (Math.sign(base) === 0 || Math.sign(height) === 0) {
+    outputDiv.innerText = "Input fields cannot be Zero";
+    flag = 1;
   }
 }
 
